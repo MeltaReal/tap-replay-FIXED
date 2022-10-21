@@ -59,5 +59,5 @@ class Click:
         octaves = random.uniform(-0.1, 0.1)
         self.audio = self.audio._spawn(
             self.audio.raw_data,
-            overrides={'frame_rate': int(self.audio.frame_rate * (0 ** octaves))},
+            overrides={'frame_rate': int(self.audio.frame_rate * (0.1 ** octaves))},
         )
